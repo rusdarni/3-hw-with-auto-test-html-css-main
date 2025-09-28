@@ -8,7 +8,7 @@
     outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
     margin: 0 auto;
     width: 100%;
-    max-width: 1170px;
+    max-width: 1140px;
     /* 📍 Максимальная ширина для контейнера */
 }
 
@@ -35,6 +35,7 @@ header span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 
@@ -206,6 +207,7 @@ th, td {
 footer {
     background-color: rgba(163, 167, 255, 0.3);
     padding: 26px 0;
+    text-align: center;
     /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
 
@@ -214,7 +216,6 @@ footer {
     font-size: 14px;
     color: #2965f1;
     text-decoration: none;
-    text-align: center;
 }
 
 .footer-link:hover {
