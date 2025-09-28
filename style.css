@@ -8,6 +8,7 @@
     outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
     margin: 0 auto;
     width: 100%;
+    max-width: 1170px;
     /* 📍 Максимальная ширина для контейнера */
 }
 
@@ -31,14 +32,20 @@ header span {
     background-color: #fafaff;
     padding: 60px 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 
 .main-section .wrapper {
-    /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
+    display: flex;
+    align-items: center;
+        /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
 }
 
 .text-wrapper {
+    max-width: 425px;
     /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
 }
 
@@ -63,6 +70,9 @@ header span {
 }
 
 .about-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 
@@ -81,11 +91,14 @@ select {
 
 select:hover,
 .text-field:hover {
+    border-color: #2965f1;
     /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
 }
 
 
 .info-wrapper {
+    display: flex;
+
     /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
 }
 
@@ -102,6 +115,9 @@ select:hover,
 
 .frameworks-list,
 .books-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     /* 📍 Свойства flexbox для отступов между элементами в списках */
 }
 
@@ -113,14 +129,21 @@ select:hover,
 }
 
 .skills-block {
+    display: flex;
+    flex-direction: column-reverse;
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 
 .skills {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
 }
 
 .books-list {
+    min-width: 50%;
     font-weight: 400;
     font-size: 16px;
     padding-left: 20px;
@@ -159,6 +182,8 @@ form {
 }
 
 .btn:hover {
+    background-color: #4a7df3;
+    cursor: pointer;
     /* 📍 Стили для кнопки при наведении курсора */
 }
 
@@ -189,8 +214,10 @@ footer {
     font-size: 14px;
     color: #2965f1;
     text-decoration: none;
+    text-align: center;
 }
 
 .footer-link:hover {
+    text-decoration: underline;
     /* 📍 Стили для ссылки при наведении курсора */
 }
